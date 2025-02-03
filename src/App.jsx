@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import AppDay1 from './Day-01_Components_Props/AppDay1';
+import AppDay2 from './Day-02_useState/AppDay2';
 
 
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <AppDay1 />
+      <AppDay2 />
     </div>
   )
 }
