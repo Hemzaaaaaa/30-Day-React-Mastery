@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Page-1" id="qvSfHAqq1GpVgaA-6Z-d">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Guichetier" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry width="150" height="966" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Système Central" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="200" width="150" height="966" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Système Guichet" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="629" width="150" height="966" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="64" y="433" width="651" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="[Compte suffisamment approvisionné]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="5">
+          <mxGeometry x="30" width="621" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="[Compte insuffisant]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="5">
+          <mxGeometry y="237" width="651" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="alt" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="54" y="231" width="671" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="[Compte valide]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="8">
+          <mxGeometry x="30" width="641" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="[Compte invalide]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="8">
+          <mxGeometry y="547" width="671" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Saisit le numéro de compte" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="398" y="107" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Valide le compte" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="501" y="159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Compte valide ou invalide" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="498" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Demande un retrait d’un montant donné" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="398" y="309" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Vérifie approvisionnement du compte" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="501" y="361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Compte suffisamment approvisionné ou insuffisant" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="498" y="413" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Effectue le débit du compte" style="curved=1;endArrow=block;" edge="1" parent="1" source="3" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="326" y="511" />
+              <mxPoint x="326" y="541" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Notification de délivrance du montant" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="498" y="593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Délivre le montant demandé" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="4" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="401" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="Notification de fonds insuffisants" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="4" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="401" y="743" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Notification de compte invalide" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="4" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="401" y="851" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
